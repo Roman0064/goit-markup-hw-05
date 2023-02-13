@@ -80,18 +80,17 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }.contact-one{
     padding-right: 40px;
 }
 .contacts{
     margin-left: 330px;
     display: flex;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact:hover,
-.contact:focus{
+.contact:is(:hover, :focus){
     color:#404BBF;
 }
                                                               /* Hero */
